@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: scribe-sync-share
+    env: node
+    buildCommand: npm run render-build
+    startCommand: npm run render-start
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 18.18.0
+    autoDeploy: true 
